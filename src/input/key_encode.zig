@@ -2369,7 +2369,7 @@ test "legacy: f1" {
             .mods = .{ .ctrl = true },
             .consumed_mods = .{},
         }, .{});
-        try testing.expectEqualStrings("\x1b[13;5~", writer.buffered());
+        try testing.expectEqualStrings("\x1b[1;5R", writer.buffered());
     }
 
     // F4
